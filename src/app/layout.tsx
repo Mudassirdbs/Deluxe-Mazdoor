@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   title: "مزدور چوک — Mazdoor Chowk",
   description:
     "Sit at the labour chowk: an illustrated Indian construction-site morning with retro background music playing and everyone else who's here right now.",
+  other: {
+    google: "notranslate",
+  },
   openGraph: {
     title: "مزدور چوک — Mazdoor Chowk",
     description:
@@ -51,8 +54,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ur" className={`${yatraOne.variable} ${notoUrdu.variable} ${dmSans.variable}`} suppressHydrationWarning>
-      <body className="antialiased" suppressHydrationWarning>{children}</body>
+    <html
+      lang="ur"
+      translate="no"
+      className={`notranslate ${yatraOne.variable} ${notoUrdu.variable} ${dmSans.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <meta name="google" content="notranslate" />
+      </head>
+      <body className="antialiased notranslate" translate="no" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }

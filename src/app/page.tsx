@@ -22,15 +22,16 @@ export default function HomePage() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/80 via-black/35 to-background/70" />
       <div className="pointer-events-none absolute inset-0 grain-overlay" />
 
-      <h1 className="pointer-events-none absolute inset-x-0 top-[8%] sm:top-[10%] z-10 flex flex-col items-center justify-center text-center px-4 select-none">
+      <h1 className="pointer-events-none absolute inset-x-0 top-[8%] sm:top-[10%] z-10 flex flex-col items-center justify-center text-center px-4 select-none notranslate" translate="no">
         <div
           dir="rtl"
-          className="font-urdu flex flex-col items-center text-6xl leading-[1.25] text-hero-ink sm:text-8xl lg:text-[9.5rem] drop-shadow-[0_10px_35px_rgba(0,0,0,0.95)] [text-shadow:_0_4px_24px_rgba(0,0,0,0.95),_0_2px_6px_rgba(0,0,0,1),_0_0_2px_rgba(0,0,0,1)]"
+          translate="no"
+          className="font-urdu notranslate flex flex-col items-center text-6xl leading-[1.25] text-hero-ink sm:text-8xl lg:text-[9.5rem] drop-shadow-[0_10px_35px_rgba(0,0,0,0.95)] [text-shadow:_0_4px_24px_rgba(0,0,0,0.95),_0_2px_6px_rgba(0,0,0,1),_0_0_2px_rgba(0,0,0,1)]"
         >
-          <span>مزدور</span>
-          <span className="-mt-3 sm:-mt-6">چوک</span>
+          <span translate="no" className="notranslate">مزدور</span>
+          <span translate="no" className="notranslate -mt-3 sm:-mt-6">چوک</span>
         </div>
-        <span className="font-display text-xl tracking-[0.3em] font-bold text-hero-ink sm:text-3xl lg:text-4xl uppercase mt-2 sm:mt-3 drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] [text-shadow:_0_2px_12px_rgba(0,0,0,0.95),_0_1px_3px_rgba(0,0,0,1)]">
+        <span translate="no" className="font-display notranslate text-xl tracking-[0.3em] font-bold text-hero-ink sm:text-3xl lg:text-4xl uppercase mt-2 sm:mt-3 drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] [text-shadow:_0_2px_12px_rgba(0,0,0,0.95),_0_1px_3px_rgba(0,0,0,1)]">
           Mazdoor Chowk
         </span>
       </h1>

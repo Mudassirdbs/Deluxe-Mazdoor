@@ -13,7 +13,7 @@ export function EnterOverlay({ onEnter }: Props) {
     >
       <div
         dir="rtl"
-        className="font-aref flex flex-col items-center text-5xl font-bold text-foreground sm:text-7xl drop-shadow-lg"
+        className="font-urdu flex flex-col items-center text-5xl leading-[1.25] text-foreground sm:text-7xl drop-shadow-lg"
       >
         <span>مزدور</span>
         <span className="-mt-2 sm:-mt-4">چوک</span>

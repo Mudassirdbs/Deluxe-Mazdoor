@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Yatra_One, DM_Sans, Noto_Nastaliq_Urdu, Aref_Ruqaa, Amiri } from "next/font/google";
+import { Yatra_One, DM_Sans, Noto_Nastaliq_Urdu } from "next/font/google";
 import "@/styles.css";
 
 const yatraOne = Yatra_One({
@@ -13,20 +13,6 @@ const notoUrdu = Noto_Nastaliq_Urdu({
   weight: ["400", "700"],
   subsets: ["arabic"],
   variable: "--font-urdu",
-  display: "swap",
-});
-
-const arefRuqaa = Aref_Ruqaa({
-  weight: ["400", "700"],
-  subsets: ["arabic"],
-  variable: "--font-aref",
-  display: "swap",
-});
-
-const amiri = Amiri({
-  weight: ["400", "700"],
-  subsets: ["arabic"],
-  variable: "--font-amiri",
   display: "swap",
 });
 
@@ -65,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ur" className={`${yatraOne.variable} ${notoUrdu.variable} ${arefRuqaa.variable} ${amiri.variable} ${dmSans.variable}`} suppressHydrationWarning>
+    <html lang="ur" className={`${yatraOne.variable} ${notoUrdu.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <body className="antialiased" suppressHydrationWarning>{children}</body>
     </html>
   );

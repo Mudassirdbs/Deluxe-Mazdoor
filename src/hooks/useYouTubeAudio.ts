@@ -78,7 +78,7 @@ export function useYouTubeAudio() {
     setCurrent(0);
     const track = list[wrapped];
     if (playerRef.current && track) {
-      playerRef.current.loadVideoById(track.id);
+      playerRef.current.loadVideoById(track.youtubeId || track.id);
       setIsPlaying(true);
     }
   }, []);
@@ -133,8 +133,8 @@ export function useYouTubeAudio() {
 
     const first = queueRef.current[indexRef.current];
     playerRef.current = new window.YT.Player(host, {
-      videoId: first?.id,
-      playerVars: { controls: 0, playsinline: 1, rel: 0, disablekb: 1, autoplay: 1 },
+      videoId: first?.youtubeId || first?.id,
+      playerVars: { controls: 0, playsinline: 1, rel: 0, disablekb: 1, autoplay: 1, start: 5 },
       events: {
         onReady: (event: { target: YTPlayer }) => {
           event.target.setVolume(volume);

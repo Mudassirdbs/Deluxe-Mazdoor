@@ -32,7 +32,7 @@ export function MusicPlayer({
         {/* Circular Album Art */}
         <div className="relative size-12 shrink-0 sm:size-14 overflow-hidden rounded-full border border-white/30 shadow-md">
           <Image
-            src={coverUrl(track.id)}
+            src={coverUrl(track)}
             alt={`${track.title} cover`}
             fill
             sizes="(max-width: 640px) 48px, 56px"
@@ -47,7 +47,7 @@ export function MusicPlayer({
               {track.title}
             </p>
             <p className="truncate text-[11px] font-normal text-white/80 tracking-wide sm:text-xs">
-              {track.artist}
+              {track.artist || track.album || "90s Bollywood"}
             </p>
           </div>
 

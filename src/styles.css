@@ -6,7 +6,9 @@
 
 @theme inline {
   --font-display: "Yatra One", "Noto Sans Devanagari", cursive;
-  --font-urdu: "Noto Nastaliq Urdu", "Amiri", serif;
+  --font-urdu: var(--font-urdu), "Noto Nastaliq Urdu", serif;
+  --font-aref: var(--font-aref), "Aref Ruqaa", serif;
+  --font-amiri: var(--font-amiri), "Amiri", serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --color-signal: var(--signal);
   --color-hero-ink: var(--hero-ink);
@@ -94,6 +96,18 @@
 @utility font-display {
   font-family: var(--font-display);
   font-weight: 400;
+}
+
+@utility font-urdu {
+  font-family: var(--font-urdu);
+}
+
+@utility font-aref {
+  font-family: var(--font-aref);
+}
+
+@utility font-amiri {
+  font-family: var(--font-amiri);
 }
 
 /* Film-grain wash that ties the UI chrome to the illustration. */

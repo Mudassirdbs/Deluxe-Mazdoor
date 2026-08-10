@@ -9,15 +9,19 @@ export function EnterOverlay({ onEnter }: Props) {
     <button
       type="button"
       onClick={onEnter}
-      className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-2 bg-background/75 backdrop-blur-md transition-opacity"
+      className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-3 bg-background/80 backdrop-blur-md transition-opacity"
     >
-      <span dir="rtl" className="font-urdu text-5xl text-foreground sm:text-7xl">
-        مزدور چوک
-      </span>
-      <span className="font-display text-xl tracking-[0.25em] text-foreground/90 uppercase">
+      <div
+        dir="rtl"
+        className="font-aref flex flex-col items-center text-5xl font-bold text-foreground sm:text-7xl drop-shadow-lg"
+      >
+        <span>مزدور</span>
+        <span className="-mt-2 sm:-mt-4">چوک</span>
+      </div>
+      <span className="font-display text-xl tracking-[0.25em] font-semibold text-foreground/95 uppercase mt-1">
         Mazdoor Chowk
       </span>
-      <span className="mt-2 text-xs tracking-[0.3em] text-foreground/70 uppercase">
+      <span className="mt-3 text-xs tracking-[0.3em] text-foreground/75 uppercase font-mono">
         tap to enter
       </span>
     </button>

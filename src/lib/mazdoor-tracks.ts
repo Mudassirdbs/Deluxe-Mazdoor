@@ -4,14 +4,22 @@ export type Track = {
   artist: string;
 };
 
-/** Curated retro Hindi playlist. Add or reorder freely — `id` is the YouTube video id. */
+/** Curated playlist: "banger songs that play at indian barber shops" (PLTJ1PnzCWyFw) */
 export const TRACKS: Track[] = [
+  { id: "N0jnLZxYwYc", title: "Mujhse Mohabbat Ka Izhaar", artist: "Kumar Sanu, Alka Yagnik" },
+  { id: "L37S_2kZpyY", title: "Tumsa Koi Pyaara", artist: "Kumar Sanu, Alka Yagnik" },
+  { id: "6Y-549Gk5Wk", title: "Woh Meri Neend Mera Chain", artist: "Sadhana Sargam" },
+  { id: "9WlE6fV8Z4k", title: "Saaton Janam Main Tere", artist: "Kumar Sanu, Alka Yagnik" },
+  { id: "5T21qYgG4g0", title: "Oye Raju", artist: "Anand Raj Anand, Anand Bakshi" },
+  { id: "aJ2WbK4S6Xw", title: "Bahut Pyar Karte Hai", artist: "S.P. Balasubramaniam" },
+  { id: "B1Y-4eM9Qx8", title: "Ehsaas Ka Sangeet Sunayee Nahi Deta", artist: "Altaf Raja, Kumar Sanu" },
+  { id: "8_N1G7QzS0M", title: "Teri Umeed Tera Intezar", artist: "Kumar Sanu, Sadhana Sargam" },
+  { id: "b9R8G0XQ63k", title: "Kitna Pyaara Tujhe Rab Ne Banaya", artist: "Udit Narayan, Alka Yagnik" },
+  { id: "4S7gK64V2q8", title: "Mera Dil Bhi Kitna Pagal Hai", artist: "Kumar Sanu, Alka Yagnik" },
+  { id: "z9Z4H5X4k2w", title: "Dheere Dheere Se Meri Zindagi Mein Aana", artist: "Kumar Sanu, Anuradha Paudwal" },
   { id: "O3jXZEVYQno", title: "Saathi Haath Badhana", artist: "Mohammed Rafi, Asha Bhosle" },
   { id: "-5ef7epnR60", title: "Mere Desh Ki Dharti", artist: "Mahendra Kapoor" },
   { id: "JTOXKc5mUGU", title: "Ik Raasta Hai Zindagi", artist: "Kishore Kumar, Lata Mangeshkar" },
-  { id: "8c_ezZRysW8", title: "Saathi Haath Badhana (Naya Daur)", artist: "Asha Bhosle, Mohammed Rafi" },
-  { id: "dBNh5gQwg5g", title: "Mere Desh Premiyon", artist: "Mohammed Rafi, Kishore Kumar" },
-  { id: "N0jnLZxYwYc", title: "Mujhse Mohabbat Ka Izhaar Karta", artist: "Kumar Sanu, Alka Yagnik" },
 ];
 
 export const SPOTIFY_PLAYLIST_URL =

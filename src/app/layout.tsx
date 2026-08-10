@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Yatra_One, DM_Sans } from "next/font/google";
+import { Yatra_One, DM_Sans, Noto_Nastaliq_Urdu } from "next/font/google";
 import "@/styles.css";
 
 const yatraOne = Yatra_One({
   weight: "400",
   subsets: ["devanagari", "latin"],
   variable: "--font-display",
+  display: "swap",
+});
+
+const notoUrdu = Noto_Nastaliq_Urdu({
+  weight: ["400", "700"],
+  subsets: ["arabic"],
+  variable: "--font-urdu",
   display: "swap",
 });
 
@@ -17,13 +24,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "मज़दूर चौक — Mazdoor Chowk",
+  title: "مزدور چوک — Mazdoor Chowk",
   description:
-    "Sit at the labour chowk: an illustrated Indian construction-site morning with retro Hindi songs playing and everyone else who's here right now.",
+    "Sit at the labour chowk: an illustrated Indian construction-site morning with retro background music playing and everyone else who's here right now.",
   openGraph: {
-    title: "मज़दूर चौक — Mazdoor Chowk",
+    title: "مزدور چوک — Mazdoor Chowk",
     description:
-      "Sit at the labour chowk: an illustrated Indian construction-site morning with retro Hindi songs playing and everyone else who's here right now.",
+      "Sit at the labour chowk: an illustrated Indian construction-site morning with retro background music playing and everyone else who's here right now.",
     type: "website",
   },
   twitter: {
@@ -44,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${yatraOne.variable} ${dmSans.variable}`} suppressHydrationWarning>
+    <html lang="ur" className={`${yatraOne.variable} ${notoUrdu.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <body className="antialiased" suppressHydrationWarning>{children}</body>
     </html>
   );

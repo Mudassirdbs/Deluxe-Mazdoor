@@ -1,4 +1,4 @@
-# Mazdoor Chowk — मज़दूर चौक
+# Mazdoor Chowk — مزدور چوک
 
 An ambient web experience portraying an Indian construction-site morning (Labour Chowk) with curated retro Hindi background music and real-time online visitor presence.
 

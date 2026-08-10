@@ -6,6 +6,7 @@
 
 @theme inline {
   --font-display: "Yatra One", "Noto Sans Devanagari", cursive;
+  --font-urdu: "Noto Nastaliq Urdu", "Amiri", serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --color-signal: var(--signal);
   --color-hero-ink: var(--hero-ink);
